@@ -30,7 +30,6 @@ public class StudyFirstFragment extends Fragment {
         mView = inflater.inflate(R.layout.study_class, container, false);
         // 从布局文件中获取名叫tl_head的工具栏
         Toolbar tl_head = mView.findViewById(R.id.tl_head);
-
         mActivity.setSupportActionBar(tl_head); // 使用tl_head替换系统自带的ActionBar
         mPageList.add("单韵母");
         mPageList.add("声母");

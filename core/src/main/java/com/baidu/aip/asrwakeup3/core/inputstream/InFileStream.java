@@ -15,7 +15,7 @@ import java.io.InputStream;
 
 public class InFileStream {
 
-    private static Context context;
+    public static Context context;
 
     private static final String TAG = "InFileStream";
 

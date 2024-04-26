@@ -25,6 +25,7 @@ public class studyActivity extends AppCompatActivity {
         Toolbar tl_head = findViewById(R.id.tl_head);
 
        setSupportActionBar(tl_head); // 使用tl_head替换系统自带的ActionBar
+        tl_head.setTitle("学习模式"); // 设置工具栏的标题文字
         mPageList.add("单韵母");
         mPageList.add("声母");
         mPageList.add("复韵母");

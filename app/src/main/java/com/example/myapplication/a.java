@@ -17,10 +17,8 @@ private VideoView videoView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a);
         Toolbar tl_head = findViewById(R.id.tl_head);
-
         tl_head.setTitle("教学视频"); // 设置工具栏的标题文字
         videoView = findViewById((R.id.videoView));
-
         String uri = "android.resource://" + getPackageName() + "/" + R.raw.sa;
         videoView.setVideoURI(Uri.parse(uri));
         videoView.setMediaController(new MediaController(this));

@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
 import com.example.myapplication.SDActivity;
+import com.example.myapplication.fache;
 
 public class TabSecondFragment extends Fragment {
     private static final String TAG = "TabSecondFragment";
@@ -43,5 +44,18 @@ public class TabSecondFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        Button myOther2 = (Button) getActivity().findViewById(R.id.btn_oval);
+
+
+        myOther2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), fache.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }

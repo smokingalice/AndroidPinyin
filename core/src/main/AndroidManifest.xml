@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.baidu.aip.asrwakeup3.core">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,4 +9,16 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <application>
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="63993741"/>
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="dWmn5QXGaHlsH5aXWHlDUwiP"/>
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="XLfsvnZyfEjKgzaU8OPR06b6EoS0Oo8L"/>
+
+    </application>
 </manifest>

@@ -20,7 +20,8 @@ public class SDActivity extends AppCompatActivity {
         setContentView(R.layout.activity_study);
 
         Toolbar tl_head = findViewById(R.id.tl_head);
-        setSupportActionBar(tl_head); // 使用tl_head替换系统自带的ActionBar
+
+        tl_head.setTitle("学习模式"); // 设置工具栏的标题文字
         vp_content = findViewById(R.id.vp_content); // 从布局文件获取翻页视图
         // 构建一个翻页适配器
 

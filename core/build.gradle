@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 
 
 android {
-    compileSdkVersion 28
-    namespace 'com.example.myapplication'
+    compileSdkVersion 29
+    namespace 'com.baidu.aip.asrwakeup3.core'
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 34
     }
 
     buildTypes {
@@ -25,5 +25,5 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation libs.appcompat.v102
 }

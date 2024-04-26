@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/yunmu_a"
+        android:layout_width="68dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/yunmu_e"
+        android:layout_width="68dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/e"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/yunmu_i"
+        android:layout_width="68dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/i"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/yunmu_o"
+        android:layout_width="68dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/o"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/yunmu_u"
+        android:layout_width="68dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/u"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/yunmu_v"
+        android:layout_width="68dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/v"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:text="重置麦克风"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="229dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:text="开始测试"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_stop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/right_a"
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+
+    <ImageView
+        android:id="@+id/right_b"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/right_c"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/right_d"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/right_e"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="332dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/right_f"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="332dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/false1"
+        android:layout_width="64dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="476dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faluse" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="247dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maptitle" />
+
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="173dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yellowpause" />
+
+    <TextView
+        android:id="@+id/tb_view"
+        android:layout_width="151dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="556dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
