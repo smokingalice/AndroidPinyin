@@ -8,11 +8,177 @@
 
 
     <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="291dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fuyunmufayin" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="60dp"
+        android:layout_height="588dp"
+        android:layout_marginStart="376dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/huangseshu" />
+
+    <ImageView
+        android:id="@+id/right1"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="168dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right3"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="168dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right4"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="296dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right5"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="296dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right6"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="296dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right7"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="424dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right8"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="424dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right9"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="424dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/right2"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="168dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lanse" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="409dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="464dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/biaoshi" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="409dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="560dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/biaoshi" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="57dp"
+        android:layout_height="586dp"
+        android:layout_marginEnd="380dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/huangseshu" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="409dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/biaoshi" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="409dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/biaoshi" />
+
+
+    <ImageView
         android:id="@+id/fuyun_ai"
         android:layout_width="68dp"
         android:layout_height="74dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ai"
@@ -22,20 +188,19 @@
         android:id="@+id/fuyun_ei"
         android:layout_width="68dp"
         android:layout_height="74dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ei"
         tools:ignore="MissingConstraints" />
 
-
     <ImageView
         android:id="@+id/fuyun_ui"
         android:layout_width="68dp"
         android:layout_height="74dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ui"
@@ -45,8 +210,8 @@
         android:id="@+id/fuyun_ao"
         android:layout_width="68dp"
         android:layout_height="74dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="232dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ao"
@@ -56,19 +221,20 @@
         android:id="@+id/fuyun_ou"
         android:layout_width="68dp"
         android:layout_height="74dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="232dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ou"
         tools:ignore="MissingConstraints" />
+
 
     <ImageView
         android:id="@+id/fuyun_iu"
         android:layout_width="68dp"
         android:layout_height="74dp"
         android:layout_marginStart="292dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="232dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iu"
@@ -78,20 +244,19 @@
         android:id="@+id/fuyun_ie"
         android:layout_width="68dp"
         android:layout_height="74dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="392dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="364dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ie"
         tools:ignore="MissingConstraints" />
 
-
     <ImageView
         android:id="@+id/fuyun_ve"
         android:layout_width="68dp"
         android:layout_height="74dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="392dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="364dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ve"
@@ -102,7 +267,7 @@
         android:layout_width="68dp"
         android:layout_height="74dp"
         android:layout_marginStart="292dp"
-        android:layout_marginTop="392dp"
+        android:layout_marginTop="364dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/er"
@@ -114,12 +279,14 @@
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:text="重置麦克风"
+        android:textColor="#272725"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
+        app:layout_constraintVertical_bias="0.951"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -128,20 +295,39 @@
         android:layout_height="54dp"
         android:layout_alignParentBottom="true"
         android:text="开始测试"
+        android:textColor="#272725"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_stop"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937"
+        app:layout_constraintVertical_bias="0.951"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="406dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+
+        android:text="重新选择练习对象"
+        android:textColor="#272725"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_stop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/right_a"
-        android:layout_width="41dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -149,10 +335,10 @@
 
     <ImageView
         android:id="@+id/right_b"
-        android:layout_width="45dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -160,10 +346,10 @@
 
     <ImageView
         android:id="@+id/right_c"
-        android:layout_width="38dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -171,10 +357,10 @@
 
     <ImageView
         android:id="@+id/right_d"
-        android:layout_width="44dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="240dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -182,10 +368,10 @@
 
     <ImageView
         android:id="@+id/right_e"
-        android:layout_width="43dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="240dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -193,10 +379,10 @@
 
     <ImageView
         android:id="@+id/right_f"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="240dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -204,10 +390,10 @@
 
     <ImageView
         android:id="@+id/right_g"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="392dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -215,10 +401,10 @@
 
     <ImageView
         android:id="@+id/right_h"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="392dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -226,10 +412,10 @@
 
     <ImageView
         android:id="@+id/right_i"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="392dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -237,9 +423,9 @@
 
     <ImageView
         android:id="@+id/right_j"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="324dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
         android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
@@ -248,10 +434,10 @@
 
     <ImageView
         android:id="@+id/right_k"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="508dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -259,10 +445,10 @@
 
     <ImageView
         android:id="@+id/right_l"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="336dp"
-        android:layout_marginTop="508dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -270,31 +456,21 @@
 
     <ImageView
         android:id="@+id/false1"
-        android:layout_width="64dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="524dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="500dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/faluse" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="291dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fuyunmufayin" />
-
-    <ImageView
         android:id="@+id/pause"
         android:layout_width="173dp"
         android:layout_height="27dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="148dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

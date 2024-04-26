@@ -32,14 +32,21 @@ import com.google.gson.Gson;
 import net.sourceforge.pinyin4j.PinyinHelper;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class fache3 extends AppCompatActivity  implements EventListener{
 
     protected Button startBtn;//开始识别  一直不说话会自动停止，需要再次打开
     protected Button stopBtn;//停止识
+    protected Button resetBtn;//重置
     private EventManager asr;//语音识别核心库
     private static final String[] VIDEO_PERMISSIONS = {Manifest.permission.CAMERA,Manifest.permission.RECORD_AUDIO,Manifest.permission.WRITE_EXTERNAL_STORAGE};
     private static final int VIDEO_PERMISSIONS_CODE = 1;
+
+    private int randomnumber;
+    private int key=0;
+    private int[] randomnumbertext= new int[]{0,0,0,0,0,0,0,0,0,0,0,0};
+    private int usable=0;
 
 
 
@@ -50,8 +57,100 @@ public class fache3 extends AppCompatActivity  implements EventListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fache3);
-
+        ImageView view_a=findViewById(R.id.shengmu_j);
+        ImageView view_b=findViewById(R.id.shengmu_q);
+        ImageView view_c=findViewById(R.id.shengmu_x);
+        ImageView view_d=findViewById(R.id.shengmu_zh);
+        ImageView view_e=findViewById(R.id.shengmu_ch);
+        ImageView view_f=findViewById(R.id.shengmu_sh);
+        ImageView view_g=findViewById(R.id.shengmu_r);
+        ImageView view_h=findViewById(R.id.shengmu_z);
+        ImageView view_i=findViewById(R.id.shengmu_c);
+        ImageView view_j=findViewById(R.id.shengmu_s);
+        ImageView view_k=findViewById(R.id.shengmu_y);
+        ImageView view_l=findViewById(R.id.shengmu_w);
+        view_a.setImageAlpha(40);
+        view_b.setImageAlpha(40);
+        view_c.setImageAlpha(40);
+        view_d.setImageAlpha(40);
+        view_e.setImageAlpha(40);
+        view_f.setImageAlpha(40);
+        view_g.setImageAlpha(40);
+        view_h.setImageAlpha(40);
+        view_i.setImageAlpha(40);
+        view_j.setImageAlpha(40);
+        view_k.setImageAlpha(40);
+        view_l.setImageAlpha(40);
         requestPermission();
+        Random random=new Random();
+        randomnumber=random.nextInt(12);
+        key=key+1;
+        randomnumbertext[randomnumber]=1;
+        requestPermission();
+        ImageView view_right1=findViewById(R.id.right1);
+        ImageView view_right2=findViewById(R.id.right2);
+        ImageView view_right3=findViewById(R.id.right3);
+        ImageView view_right4=findViewById(R.id.right4);
+        ImageView view_right5=findViewById(R.id.right5);
+        ImageView view_right6=findViewById(R.id.right6);
+        ImageView view_right7=findViewById(R.id.right7);
+        ImageView view_right8=findViewById(R.id.right8);
+        ImageView view_right9=findViewById(R.id.right9);
+        ImageView view_right10=findViewById(R.id.right10);
+        ImageView view_right11=findViewById(R.id.right11);
+        ImageView view_right12=findViewById(R.id.right12);
+
+        switch (randomnumber){
+            case 0:
+                view_right1.setVisibility(View.VISIBLE);
+                view_a.setImageAlpha(255);
+                break;
+            case 1:
+                view_right2.setVisibility(View.VISIBLE);
+                view_b.setImageAlpha(255);
+                break;
+            case 2:
+                view_right3.setVisibility(View.VISIBLE);
+                view_c.setImageAlpha(255);
+                break;
+            case 3:
+                view_right4.setVisibility(View.VISIBLE);
+                view_d.setImageAlpha(255);
+                break;
+            case 4:
+                view_right5.setVisibility(View.VISIBLE);
+                view_e.setImageAlpha(255);
+                break;
+            case 5:
+                view_right6.setVisibility(View.VISIBLE);
+                view_f.setImageAlpha(255);
+                break;
+            case 6:
+                view_right7.setVisibility(View.VISIBLE);
+                view_g.setImageAlpha(255);
+                break;
+            case 7:
+                view_right8.setVisibility(View.VISIBLE);
+                view_h.setImageAlpha(255);
+                break;
+            case 8:
+                view_right9.setVisibility(View.VISIBLE);
+                view_i.setImageAlpha(255);
+                break;
+            case 9:
+                view_right10.setVisibility(View.VISIBLE);
+                view_j.setImageAlpha(255);
+                break;
+            case 10:
+                view_right11.setVisibility(View.VISIBLE);
+                view_k.setImageAlpha(255);
+                break;
+            case 11:
+                view_right12.setVisibility(View.VISIBLE);
+                view_l.setImageAlpha(255);
+                break;
+
+        }
         initView();
 
 
@@ -69,7 +168,8 @@ public class fache3 extends AppCompatActivity  implements EventListener{
 
         startBtn = (Button) findViewById(R.id.btn_start);
         stopBtn = (Button) findViewById(R.id.btn_stop);
-
+        resetBtn = (Button) findViewById(R.id.btn_reset);
+        MediaPlayer mediaplayer3= MediaPlayer.create(this,R.raw.qiehuan);
         ImageView view_pause=findViewById(R.id.pause);
         startBtn.setOnClickListener(new View.OnClickListener() {//开始
 
@@ -86,6 +186,151 @@ public class fache3 extends AppCompatActivity  implements EventListener{
 
             }
 
+        });
+        resetBtn.setOnClickListener(new View.OnClickListener() {//重置
+            @Override
+            public void onClick(View v) {
+
+                ImageView view_a=findViewById(R.id.shengmu_j);
+                ImageView view_b=findViewById(R.id.shengmu_q);
+                ImageView view_c=findViewById(R.id.shengmu_x);
+                ImageView view_d=findViewById(R.id.shengmu_zh);
+                ImageView view_e=findViewById(R.id.shengmu_ch);
+                ImageView view_f=findViewById(R.id.shengmu_sh);
+                ImageView view_g=findViewById(R.id.shengmu_r);
+                ImageView view_h=findViewById(R.id.shengmu_z);
+                ImageView view_i=findViewById(R.id.shengmu_c);
+                ImageView view_j=findViewById(R.id.shengmu_s);
+                ImageView view_k=findViewById(R.id.shengmu_y);
+                ImageView view_l=findViewById(R.id.shengmu_w);
+                ImageView view_right1=findViewById(R.id.right1);
+                ImageView view_right2=findViewById(R.id.right2);
+                ImageView view_right3=findViewById(R.id.right3);
+                ImageView view_right4=findViewById(R.id.right4);
+                ImageView view_right5=findViewById(R.id.right5);
+                ImageView view_right6=findViewById(R.id.right6);
+                ImageView view_right7=findViewById(R.id.right7);
+                ImageView view_right8=findViewById(R.id.right8);
+                ImageView view_right9=findViewById(R.id.right9);
+                ImageView view_right10=findViewById(R.id.right10);
+                ImageView view_right11=findViewById(R.id.right11);
+                ImageView view_right12=findViewById(R.id.right12);
+                switch (randomnumber){
+                    case 0:
+                        view_right1.setVisibility(View.INVISIBLE);
+                        view_a.setImageAlpha(40);
+                        break;
+                    case 1:
+                        view_right2.setVisibility(View.INVISIBLE);
+                        view_b.setImageAlpha(40);
+                        break;
+                    case 2:
+                        view_right3.setVisibility(View.INVISIBLE);
+                        view_c.setImageAlpha(40);
+                        break;
+                    case 3:
+                        view_right4.setVisibility(View.INVISIBLE);
+                        view_d.setImageAlpha(40);
+                        break;
+                    case 4:
+                        view_right5.setVisibility(View.INVISIBLE);
+                        view_e.setImageAlpha(40);
+                        break;
+                    case 5:
+                        view_right6.setVisibility(View.INVISIBLE);
+                        view_f.setImageAlpha(40);
+                        break;
+                    case 6:
+                        view_right7.setVisibility(View.INVISIBLE);
+                        view_g.setImageAlpha(40);
+                        break;
+                    case 7:
+                        view_right8.setVisibility(View.INVISIBLE);
+                        view_h.setImageAlpha(40);
+                        break;
+                    case 8:
+                        view_right9.setVisibility(View.INVISIBLE);
+                        view_i.setImageAlpha(40);
+                        break;
+                    case 9:
+                        view_right10.setVisibility(View.INVISIBLE);
+                        view_j.setImageAlpha(40);
+                        break;
+                    case 10:
+                        view_right11.setVisibility(View.INVISIBLE);
+                        view_k.setImageAlpha(40);
+                        break;
+                    case 11:
+                        view_right12.setVisibility(View.INVISIBLE);
+                        view_l.setImageAlpha(40);
+                        break;
+                }
+                Random random=new Random();
+                if(key>=12){
+                    for(int i=0;i<12;i++)
+                    {
+                        randomnumbertext[i]=0;
+                    }
+                    key=0;
+                }
+                mediaplayer3.start();
+                randomnumber=random.nextInt(12);
+                while(randomnumbertext[randomnumber]==1&&key<12){
+                    randomnumber=random.nextInt(12);
+                }
+                randomnumbertext[randomnumber]=1;
+                key++;
+                switch (randomnumber){
+                    case 0:
+                        view_right1.setVisibility(View.VISIBLE);
+                        view_a.setImageAlpha(255);
+                        break;
+                    case 1:
+                        view_right2.setVisibility(View.VISIBLE);
+                        view_b.setImageAlpha(255);
+                        break;
+                    case 2:
+                        view_right3.setVisibility(View.VISIBLE);
+                        view_c.setImageAlpha(255);
+                        break;
+                    case 3:
+                        view_right4.setVisibility(View.VISIBLE);
+                        view_d.setImageAlpha(255);
+                        break;
+                    case 4:
+                        view_right5.setVisibility(View.VISIBLE);
+                        view_e.setImageAlpha(255);
+                        break;
+                    case 5:
+                        view_right6.setVisibility(View.VISIBLE);
+                        view_f.setImageAlpha(255);
+                        break;
+                    case 6:
+                        view_right7.setVisibility(View.VISIBLE);
+                        view_g.setImageAlpha(255);
+                        break;
+                    case 7:
+                        view_right8.setVisibility(View.VISIBLE);
+                        view_h.setImageAlpha(255);
+                        break;
+                    case 8:
+                        view_right9.setVisibility(View.VISIBLE);
+                        view_i.setImageAlpha(255);
+                        break;
+                    case 9:
+                        view_right10.setVisibility(View.VISIBLE);
+                        view_j.setImageAlpha(255);
+                        break;
+                    case 10:
+                        view_right11.setVisibility(View.VISIBLE);
+                        view_k.setImageAlpha(255);
+                        break;
+                    case 11:
+                        view_right12.setVisibility(View.VISIBLE);
+                        view_l.setImageAlpha(255);
+                        break;
+                }
+            }
         });
         stopBtn.setOnClickListener(new View.OnClickListener() {//停止
             @Override
@@ -252,7 +497,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                 assert result != null;
 
 
-                if (result.startsWith("ji")) { // 百分比为空，则正常显示
+                if (result.startsWith("ji")&&randomnumber==0) { // 百分比为空，则正常显示
                     view_a.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -264,7 +509,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                     }, 1500);
                 }
 
-                else if (result.startsWith("qi")) { // 百分比为空，则正常显示
+                else if (result.startsWith("qi")&&randomnumber==1) { // 百分比为空，则正常显示
                     view_b.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -275,7 +520,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("xi")) { // 百分比为空，则正常显示
+                else if (result.startsWith("xi")&&randomnumber==2) { // 百分比为空，则正常显示
                     view_c.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -287,7 +532,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                     }, 1500);
                 }
 
-                else if (result.startsWith("zhi")) { // 百分比为空，则正常显示
+                else if (result.startsWith("zhi")&&randomnumber==3) { // 百分比为空，则正常显示
                     view_d.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -298,7 +543,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("chi")) { // 百分比为空，则正常显示
+                else if (result.startsWith("chi")&&randomnumber==4) { // 百分比为空，则正常显示
                     view_e.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -309,7 +554,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("shi")) { // 百分比为空，则正常显示
+                else if (result.startsWith("shi")&&randomnumber==5) { // 百分比为空，则正常显示
                     view_f.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -320,7 +565,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("ri")) { // 百分比为空，则正常显示
+                else if (result.startsWith("ri")&&randomnumber==6) { // 百分比为空，则正常显示
                     view_g.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -331,7 +576,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("zi")) { // 百分比为空，则正常显示
+                else if (result.startsWith("zi")&&randomnumber==7) { // 百分比为空，则正常显示
                     view_h.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -342,7 +587,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("ci")) { // 百分比为空，则正常显示
+                else if (result.startsWith("ci")&&randomnumber==8) { // 百分比为空，则正常显示
                     view_i.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -353,7 +598,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("si")) { // 百分比为空，则正常显示
+                else if (result.startsWith("si")&&randomnumber==9) { // 百分比为空，则正常显示
                     view_j.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -364,7 +609,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("yi")) { // 百分比为空，则正常显示
+                else if (result.startsWith("yi")&&randomnumber==10) { // 百分比为空，则正常显示
                     view_k.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();
@@ -375,7 +620,7 @@ public class fache3 extends AppCompatActivity  implements EventListener{
                         }
                     }, 1500);
                 }
-                else if (result.startsWith("wu")) { // 百分比为空，则正常显示
+                else if (result.startsWith("wu")&&randomnumber==11) { // 百分比为空，则正常显示
                     view_l.setVisibility(View.VISIBLE);
                     view_pause.setVisibility(View.INVISIBLE);
                     mediaplayer1.start();

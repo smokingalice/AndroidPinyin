@@ -24,8 +24,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="学习模式"
+
             android:textColor="@color/black"
-            android:textSize="17sp" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/btn_oval"
@@ -34,7 +35,7 @@
             android:layout_weight="1"
             android:text="游戏模式"
             android:textColor="@color/black"
-            android:textSize="17sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
