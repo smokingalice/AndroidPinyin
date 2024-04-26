@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tl_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_light" />
+    <com.example.myapplication.NEWViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/rg_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/TabButton"
+            android:checked="true"
+            android:drawableStart="@drawable/tab_first_selector"
+            android:text="@string/title_home" />
+
+        <RadioButton
+            android:id="@+id/rb_class"
+            style="@style/TabButton"
+            android:drawableStart="@drawable/tab_second_selector"
+            android:text="@string/title_dashboard" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/TabButton"
+            android:drawableStart="@drawable/tab_third_selector"
+            android:text="@string/title_notifications" />
+    </RadioGroup>
+
+</LinearLayout>

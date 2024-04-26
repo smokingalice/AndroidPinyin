@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B3FFAA</color>
+    <color name="colorPrimaryDark">#B3FFAA</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#888888</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#F9CC12</color>
+    <color name="blue">#0099ff</color>
+    <color name="green">#00ff99</color>
+    <color name="blue_light">#B3FFAA</color>
+    <color name="blue_light2">#CDFFB7</color>
+    <color name="tab_text_selected">#0084e8</color>
+    <color name="tab_text_normal">#7597b3</color>
+    <color name="tab_text_normal2">#9C8409</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <!--半透明-->
+    <color name="translucent">#22050505</color>
+</resources>

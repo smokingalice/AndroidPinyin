@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageButton
+                android:id="@+id/bimageButton"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/zhi"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton2"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/chi"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton3"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/shi"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton4"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ri"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton5"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="336dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/zi"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton6"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="336dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ci"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton7"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="452dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/si"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton8"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="452dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yi"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton9"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="572dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/wu"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton10"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="572dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ye"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton11"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="692dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yu"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton12"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="692dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yue"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton13"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="824dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yuan"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton14"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="824dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yin"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton15"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="944dp"
+                android:layout_marginEnd="256dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yun2"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/bimageButton16"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="944dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTintMode="add"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ying"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="260dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.298"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/title5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

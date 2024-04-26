@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">南邮教你学拼音</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">模式</string>
+    <string name="title_notifications">网络资源</string>
+    <string name="title_video">视频学习</string>
+    <string name="title_test">发音练习</string>
+</resources>
