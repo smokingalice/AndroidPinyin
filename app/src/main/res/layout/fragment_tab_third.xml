@@ -1,16 +1,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/backgrd2"
     android:orientation="vertical"
     android:padding="10dp">
 
-    <TextView
-        android:id="@+id/tv_third"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/tab3title" />
+
+    <ImageView
+        android:id="@+id/imageView12"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom|center"
-        android:textColor="#000000"
-        android:textSize="17sp" />
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/biaoshi" />
+
+    <Button
+        android:id="@+id/vedio"
+        android:layout_width="386dp"
+        android:layout_height="71dp"
+        android:background="#02233988"
+        android:gravity="center"
+        android:text="汉语拼音学习网"
+        android:textColor="#E36042"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/biaoshi" />
+
+    <Button
+        android:id="@+id/file"
+        android:layout_width="381dp"
+        android:layout_height="78dp"
+        android:background="#02233988"
+        android:gravity="center"
+        android:text="利民拼音学习网"
+        android:textColor="#F65A40"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/biaoshi" />
 
 </LinearLayout>

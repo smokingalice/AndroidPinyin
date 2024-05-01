@@ -1,5 +1,7 @@
 package com.example.myapplication.adapter;
 
+import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -20,6 +22,7 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
+
             return new TabFirstFragment();  // 返回第一个碎片
         } else if (position == 1) {
             return new TabSecondFragment();  // 返回第二个碎片
