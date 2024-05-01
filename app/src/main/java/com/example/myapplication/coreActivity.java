@@ -24,7 +24,7 @@ public class coreActivity extends AppCompatActivity {
         setSupportActionBar(tl_head); // 使用tl_head替换系统自带的ActionBar
         vp_content = findViewById(R.id.vp_content); // 从布局文件获取翻页视图
         // 构建一个翻页适配器
-       vp_content.setPagingEnabled(false);//可否翻页
+
         TabPagerAdapter adapter = new TabPagerAdapter(getSupportFragmentManager());
         vp_content.setAdapter(adapter); // 设置翻页视图的适配器
         // 给翻页视图添加页面变更监听器

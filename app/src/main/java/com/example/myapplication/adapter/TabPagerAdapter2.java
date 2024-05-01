@@ -3,11 +3,12 @@ package com.example.myapplication.adapter;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.myapplication.fragment.StudyFirstFragment;
 import com.example.myapplication.fragment.StudySecondFragment;
 
-public class TabPagerAdapter2 extends FragmentPagerAdapter {
+public class TabPagerAdapter2 extends FragmentStatePagerAdapter {
 
     // 碎片页适配器的构造方法，传入碎片管理器
     public TabPagerAdapter2(FragmentManager fm) {

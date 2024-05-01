@@ -1,15 +1,21 @@
 package com.example.myapplication.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
+import com.example.myapplication.SDActivity;
+import com.example.myapplication.a;
 
 public class TabFirstFragment extends Fragment {
     private static final String TAG = "TabFirstFragment";
@@ -25,7 +31,5 @@ public class TabFirstFragment extends Fragment {
         tv_second.setText("学习数据");
         return mView;
     }
-
-
 
 }

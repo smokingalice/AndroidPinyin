@@ -79,7 +79,6 @@ public class fache2 extends AppCompatActivity  implements EventListener{
         view_j.setImageAlpha(40);
         view_k.setImageAlpha(40);
         requestPermission();
-
         Random random=new Random();
         randomnumber=random.nextInt(11);
         key=key+1;
@@ -96,7 +95,6 @@ public class fache2 extends AppCompatActivity  implements EventListener{
         ImageView view_right9=findViewById(R.id.right9);
         ImageView view_right10=findViewById(R.id.right10);
         ImageView view_right11=findViewById(R.id.right11);
-
         switch (randomnumber){
             case 0:
                 view_right1.setVisibility(View.VISIBLE);
@@ -145,27 +143,22 @@ public class fache2 extends AppCompatActivity  implements EventListener{
 
         }
         initView();
-
-
         //初始化EventManager对象
         asr = EventManagerFactory.create(this, "asr");
         //注册自己的输出事件类
         asr.registerListener((EventListener) this); //  EventListener 中 onEvent方法
-
     }
 
     /**
      * 初始化控件
      */
     private void initView() {
-
         startBtn = (Button) findViewById(R.id.btn_start);
         stopBtn = (Button) findViewById(R.id.btn_stop);
         resetBtn = (Button) findViewById(R.id.btn_reset);
         MediaPlayer mediaplayer3= MediaPlayer.create(this,R.raw.qiehuan);
         ImageView view_pause=findViewById(R.id.pause);
         startBtn.setOnClickListener(new View.OnClickListener() {//开始
-
             @Override
             public void onClick(View v) {
                 asr.send(SpeechConstant.ASR_START, "{}", null, 0, 0);
