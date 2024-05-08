@@ -8,11 +8,7 @@ import com.example.myapplication.view.Piece;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 创建竖的游戏区域，竖向排列的方块以垂直的空列分隔开<br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
+
 public class VerticalBoard extends AbstractBoard {
     @Override
     protected List<Piece> createPieces(GameConf config, Piece[][] pieces) {

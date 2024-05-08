@@ -2,11 +2,7 @@ package com.example.myapplication.view;
 
 import android.graphics.Bitmap;
 
-/**
- * 封装图片ID与图片本身的工具类 <br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
+
 public class PieceImage {
     /**
      * 图片

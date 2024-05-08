@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,7 +15,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -32,13 +30,9 @@ import java.lang.ref.WeakReference;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * 游戏Activity <br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
-public class LinkActivity extends Activity implements BaseHandlerCallBack {
-    private static final String TAG = "LinkActivity";
+
+public class GameActivity extends Activity implements BaseHandlerCallBack {
+    private static final String TAG = "GameActivity";
     /**
      * 游戏配置对象
      */
@@ -259,14 +253,14 @@ public class LinkActivity extends Activity implements BaseHandlerCallBack {
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
 
-        WindowManager wm = (WindowManager) LinkActivity.this.getSystemService(Context.WINDOW_SERVICE);
+        WindowManager wm = (WindowManager) GameActivity.this.getSystemService(Context.WINDOW_SERVICE);
         int width = wm.getDefaultDisplay().getWidth();
         int height = wm.getDefaultDisplay().getHeight();
         Log.d(TAG, " width = " + width + "，height =" + height);
 
         int gameViewWidth = gameView.getWidth();
         int gameViewHeight = gameView.getHeight();
-        Log.e("LinkActivity：", " gameViewWidth = " + gameViewWidth + "，gameViewHeight =" + gameViewHeight);
+        Log.e("GameActivity：", " gameViewWidth = " + gameViewWidth + "，gameViewHeight =" + gameViewHeight);
 
 
         // 每个 方块的 宽度 等于 公共画盘的宽度 / x方向的个数

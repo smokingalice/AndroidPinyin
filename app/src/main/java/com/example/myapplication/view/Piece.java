@@ -2,11 +2,7 @@ package com.example.myapplication.view;
 
 import android.graphics.Point;
 
-/**
- * 连连看游戏中的方块对象 <br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
+
 public class Piece {
     /**
      * 保存方块对象的所对应的图片

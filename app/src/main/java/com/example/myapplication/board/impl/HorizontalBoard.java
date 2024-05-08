@@ -8,11 +8,7 @@ import com.example.myapplication.view.Piece;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 创建横的游戏区域 <br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
+
 public class HorizontalBoard extends AbstractBoard {
     @Override
     protected List<Piece> createPieces(GameConf config, Piece[][] pieces) {

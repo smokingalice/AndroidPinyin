@@ -46,7 +46,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LinkActivity"
+            android:name=".GameActivity"
             android:exported="true">
         </activity>
         <activity android:name=".coreActivity" />
