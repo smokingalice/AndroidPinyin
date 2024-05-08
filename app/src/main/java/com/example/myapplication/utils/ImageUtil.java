@@ -117,10 +117,16 @@ public class ImageUtil {
         Random random = new Random();
         // 创建结果集合
         List<Integer> result = new ArrayList<Integer>();
+        boolean[] flag=new boolean[sourceValues.size()];//重复判断句
         for (int i = 0; i < size; i++) {
+            int index;
             try {
+                do{
+                    //从[0,redBalls.length)取
+                    index = random.nextInt(sourceValues.size());
+                }while(flag[index]);
+                flag[index]=true;
                 // 随机获取一个数字，大于、小于sourceValues.size()的数值
-                int index = random.nextInt(sourceValues.size());
                 // 从图片ID集合中获取该图片对象
                 Integer image = sourceValues.get(index);
                 Integer image2 = sourceValues2.get(index);
