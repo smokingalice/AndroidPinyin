@@ -7,11 +7,7 @@ import com.example.myapplication.view.PieceImage;
 
 import java.util.List;
 
-/**
- * 游戏区域的抽象类 <br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
+
 
 public abstract class AbstractBoard {
     // 定义一个抽象方法, 让子类去实现

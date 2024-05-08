@@ -15,11 +15,7 @@ import com.example.myapplication.utils.LinkInfo;
 
 import java.util.List;
 
-/**
- * 连连看游戏中的游戏主界面 <br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
+
 public class GameView extends View {
     /**
      * 游戏逻辑的实现类

@@ -12,13 +12,12 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.myapplication.LinkActivity;
+import com.example.myapplication.GameActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.SDActivity;
 import com.example.myapplication.bean.UserInfo;
 import com.example.myapplication.coreActivity;
 import com.example.myapplication.database.UserDBHelper;
-import com.example.myapplication.fache;
 
 import java.util.List;
 import java.util.Objects;
@@ -81,7 +80,7 @@ public class TabSecondFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LinkActivity.class);
+                Intent intent = new Intent(getActivity(), GameActivity.class);
 
                 mHelper = UserDBHelper.getInstance(getActivity(), 1);
                 mHelper.openReadLink(); // 打开数据库帮助器的读连接

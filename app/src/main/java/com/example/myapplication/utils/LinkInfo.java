@@ -5,11 +5,7 @@ import android.graphics.Point;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 连接信息类<br/>
- * <br/>
- * 关于本代码介绍可以参考一下博客: <a href="http://blog.csdn.net/ouyang_peng">欧阳鹏的CSDN博客</a> <br/>
- */
+
 public class LinkInfo {
     /**
      * 创建一个集合用于保存连接点
