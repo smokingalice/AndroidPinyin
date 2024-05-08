@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/totalback">
+
+    <!-- 控制游戏开始的按钮,该按钮的背景图片可以根据按钮的状态改变 -->
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="157dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/begin2"
+        android:text="开始"
+        android:textColor="#001EBB38"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+     <!--水平排列的LinearLayout -->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="499dp"
+        android:text="1"
+        android:textColor="#001EBB38"
+        android:background="@drawable/titlwewe"
+       />
+
+    <LinearLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E21EBB38"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="169dp"
+            android:layout_height="40dp"
+
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="重玩复杂版"
+            android:background="@color/blue_light"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/restartButton2"
+            android:layout_width="147dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="5dp"
+            android:text="重玩简单版"
+            android:background="@color/blue_light"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+
+            android:textStyle="bold" />
+        <!-- 显示游戏剩余时间的文本框 -->
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="#ff9"
+            android:textSize="20sp"
+            tools:text="倒计时:60" />
+
+    </LinearLayout>
+
+    <!-- 游戏主界面的自定义组件 -->
+
+    <com.example.myapplication.view.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/controlPanel"
+        android:layout_marginBottom="-8dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="338dp"
+        android:layout_marginBottom="73dp"
+        android:layout_weight="1"
+        android:background="@drawable/cont"
+        android:text="Button"
+        android:textColor="#00FFFF99" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="338dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/pause"
+        android:text="Button"
+        android:textColor="#00FFFF99"
+        android:visibility="invisible" />
+
+</RelativeLayout>

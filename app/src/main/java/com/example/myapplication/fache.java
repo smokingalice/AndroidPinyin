@@ -55,7 +55,7 @@ import kotlin.text.UStringsKt;
 
 public class fache extends AppCompatActivity  implements EventListener{
 
-    protected TextView txtResult;//识别结果
+
     protected Button startBtn;//开始识别  一直不说话会自动停止，需要再次打开
     protected Button stopBtn;//停止识
     protected Button resetBtn;//重置
@@ -134,7 +134,7 @@ public class fache extends AppCompatActivity  implements EventListener{
      * 初始化控件
      */
     private void initView() {
-        txtResult = (TextView) findViewById(R.id.tb_view);
+
         startBtn = (Button) findViewById(R.id.btn_start);
         stopBtn = (Button) findViewById(R.id.btn_stop);
         resetBtn = (Button) findViewById(R.id.btn_reset);
@@ -482,7 +482,7 @@ public class fache extends AppCompatActivity  implements EventListener{
                     },1500);
 
                 }
-                txtResult.setText(result);
+
             }
         }
 

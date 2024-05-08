@@ -87,7 +87,7 @@ public class SQLiteWriteActivity extends AppCompatActivity implements View.OnCli
             mHelper = UserDBHelper.getInstance(this, 1);
             mHelper.openWriteLink(); // 打开数据库帮助器的写连接
             mHelper.insert(info); // 执行数据库帮助器的插入操作
-            ToastUtil.show(this, "数据已写入SQLite数据库");
+            ToastUtil.show(this, "注册成功");
           // 携带意图返回上一个页面
             finish(); // 结束当前的活动页面
         }
