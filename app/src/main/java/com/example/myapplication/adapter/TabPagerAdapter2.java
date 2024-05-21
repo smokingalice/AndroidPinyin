@@ -10,12 +10,12 @@ import com.example.myapplication.fragment.StudySecondFragment;
 
 public class TabPagerAdapter2 extends FragmentStatePagerAdapter {
 
-    // 碎片页适配器的构造方法，传入碎片管理器
+
     public TabPagerAdapter2(FragmentManager fm) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
     }
 
-    // 获取指定位置的碎片Fragment
+
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
@@ -28,7 +28,7 @@ public class TabPagerAdapter2 extends FragmentStatePagerAdapter {
         }
     }
 
-    // 获取碎片Fragment的个数
+
     @Override
     public int getCount() {
         return 2;

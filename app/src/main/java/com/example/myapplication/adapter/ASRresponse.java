@@ -3,15 +3,6 @@ package com.example.myapplication.adapter;
 import java.util.List;
 
 public class ASRresponse {
-
-    /**
-     * results_recognition : ["你好，"]
-     * result_type : final_result
-     * best_result : 你好，
-     * origin_result : {"asr_align_begin":80,"asr_align_end":130,"corpus_no":6835867007181645805,"err_no":0,"raf":133,"result":{"word":["你好，"]},"sn":"82d975e0-6eb4-43ac-a0e7-850bb149f28e"}
-     * error : 0
-     */
-
     private String result_type;
     private String best_result;
     private OriginResultBean origin_result;
@@ -41,7 +32,6 @@ public class ASRresponse {
     public void setOrigin_result(OriginResultBean origin_result) {
         this.origin_result = origin_result;
     }
-
     public int getError() {
         return error;
     }
@@ -59,16 +49,6 @@ public class ASRresponse {
     }
 
     public static class OriginResultBean {
-        /**
-         * asr_align_begin : 80
-         * asr_align_end : 130
-         * corpus_no : 6835867007181645805
-         * err_no : 0
-         * raf : 133
-         * result : {"word":["你好，"]}
-         * sn : 82d975e0-6eb4-43ac-a0e7-850bb149f28e
-         */
-
         private int asr_align_begin;
         private int asr_align_end;
         private long corpus_no;

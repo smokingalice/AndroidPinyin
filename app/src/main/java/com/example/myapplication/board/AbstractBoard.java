@@ -11,18 +11,7 @@ import java.util.List;
 
 public abstract class AbstractBoard {
     // 定义一个抽象方法, 让子类去实现
-
-    /**
-     * 采用模板设计模式：创建一个List集合，该集合里面存放初始化游戏时所需的Piece对象
-     */
     protected abstract List<Piece> createPieces(GameConf config, Piece[][] pieces);
-
-    /**
-     * 返回Piece数组
-     *
-     * @param config
-     * @return
-     */
     public Piece[][] create(GameConf config) {
         // 创建Piece[][]数组
         Piece[][] pieces = new Piece[config.getXSize()][config.getYSize()];
