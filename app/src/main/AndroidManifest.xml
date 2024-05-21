@@ -6,9 +6,9 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- 相机权限 -->
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- 录音权限 -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 读写权限 -->
+        <uses-permission android:name="android.permission.INTERNET" /> <!-- 相机权限 -->
+        <uses-permission android:name="android.permission.CAMERA" /> <!-- 录音权限 -->
+        <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 读写权限 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
@@ -56,8 +56,10 @@
         <activity android:name=".SDActivity" />
         <activity android:name=".SQLiteWriteActivity" />
         <activity android:name=".LoginForgetActivity" />
-        <activity android:name=".Web1Activity" />
-        <activity android:name=".Web2Activity" />
+        <activity android:name=".Web1Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Web2Activity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".fache"
             android:exported="false" />

@@ -21,6 +21,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.baidu.speech.EventListener;
+import com.baidu.speech.asr.SpeechConstant;
+
 @SuppressLint(value={"SetTextI18n","SetJavaScriptEnabled"})
 public class Web1Activity extends AppCompatActivity {
     private final static String TAG = "WebBrowserActivity";
@@ -199,5 +202,13 @@ public class Web1Activity extends AppCompatActivity {
     private DownloadListener mDownloadListener = (url, userAgent, contentDisposition, mimetype, contentLength) -> {
         // 此处操作文件下载
     };
+    protected void onDestroy() {
+        super.onDestroy();
+        if(mDialog != null) {
+            mDialog.dismiss();
+        }
+        // 基于SDK集成4.2 发送取消事件
+      finish();
+    }
 
 }

@@ -199,5 +199,13 @@ public class Web2Activity extends AppCompatActivity {
     private DownloadListener mDownloadListener = (url, userAgent, contentDisposition, mimetype, contentLength) -> {
         // 此处操作文件下载
     };
+    protected void onDestroy() {
+        super.onDestroy();
+        if(mDialog != null) {
+            mDialog.dismiss();
+        }
+        // 基于SDK集成4.2 发送取消事件
+        finish();
+    }
 
 }

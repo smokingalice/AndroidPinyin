@@ -17,16 +17,12 @@ import java.util.List;
 import java.util.Random;
 
 public class ImageUtil {
-    /**
-     * 保存所有连连看图片资源值(int类型)
-     */
+
     private static List<Integer> imageValues = getImageValues();
     private static List<Integer> imageValuesnum = getImageValuesnum();
     private static List<Integer> imageValuesnum2 = getImageValuesnum2();
     private static List<Integer> imageValues2 = getImageValues2();
-    /**
-     * 获取连连看所有图片的ID（约定所有图片ID以p_开头）
-     */
+
     public static List<Integer> getImageValues() {
         try {
             // 得到R.drawable所有的属性, 即获取drawable目录下的所有图片
@@ -104,13 +100,7 @@ public class ImageUtil {
         }
     }
 
-    /**
-     * 随机从sourceValues的集合中获取size个图片ID, 返回结果为图片ID的集合
-     *
-     * @param sourceValues 从中获取的集合
-     * @param size         需要获取的个数
-     * @return size个图片ID的集合
-     */
+
     public static List<Integer> getRandomValues(List<Integer> sourceValues,List<Integer> sourceValues2,
                                                 int size) {
         // 创建一个随机数生成器
@@ -140,12 +130,7 @@ public class ImageUtil {
         return result;
     }
 
-    /**
-     * 从drawable目录中中获取size个图片资源ID(以p_为前缀的资源名称), 其中size为游戏数量
-     *
-     * @param size 需要获取的图片ID的数量
-     * @return size个图片ID的集合
-     */
+
     public static List<Integer> getPlayValues(int size) {
         if (size % 2 != 0) {
             // 如果该数除2有余数，将size加1
@@ -160,11 +145,7 @@ public class ImageUtil {
         return playImageValues;
     }
 
-    /**
-     * 将图片ID集合转换PieceImage对象集合，PieceImage封装了图片ID与图片本身
-     *
-     * @return size个PieceImage对象的集合
-     */
+
     public static List<PieceImage> getPlayImages(Context context, int size) {
         // 获取图片ID组成的集合
         List<Integer> resourceValues = getPlayValues(size);
@@ -185,9 +166,7 @@ public class ImageUtil {
         return result;
     }
 
-    /**
-     * 将Drawable转换为Bitmap
-     */
+
     public static Bitmap drawableToBitmap(Drawable drawable) {
         if (drawable instanceof BitmapDrawable) {
             return ((BitmapDrawable) drawable).getBitmap();
@@ -209,12 +188,7 @@ public class ImageUtil {
     }
 
 
-    /**
-     * 获取选中标识的图片
-     *
-     * @param context
-     * @return 选中标识的图片
-     */
+
     public static Bitmap getSelectImage(Context context) {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;//表示只获取Bitmap的尺寸,而不获取bitmap

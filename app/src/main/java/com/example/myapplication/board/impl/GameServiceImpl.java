@@ -14,20 +14,12 @@ import java.util.Random;
 
 
 public class GameServiceImpl implements GameService {
-    /**
-     * 定义一个Piece[][]数组
-     */
+
     private Piece[][] pieces;
-    /**
-     * 游戏配置对象
-     */
+
     private GameConf config;
 
-    /**
-     * 构造方法
-     *
-     * @param config 游戏配置对象
-     */
+
     public GameServiceImpl(GameConf config) {
         // 将游戏的配置对象设置本类中
         this.config = config;
@@ -79,9 +71,7 @@ public class GameServiceImpl implements GameService {
         return false;
     }
 
-    /**
-     * 根据触碰点的位置查找相应的方块
-     */
+
     @Override
     public Piece findPiece(float touchX, float touchY) {
         /*

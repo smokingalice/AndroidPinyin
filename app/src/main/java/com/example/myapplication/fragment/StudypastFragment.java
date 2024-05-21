@@ -36,9 +36,7 @@ public class StudypastFragment extends Fragment {
 
 
         myOther.setOnClickListener(new View.OnClickListener() {
-            /**
-             二、从一个Activity的Fragment跳转到另外一个Activity(等同于Activity之间的跳转（上下文是getActivity）)
-             */
+
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), a.class);
