@@ -6,7 +6,7 @@ public class UserInfo {
     public int xuhao; // 序号
     public String name; // 姓名
     public int age; // 年龄
-    public long study; //study次数
+        public long study; //study次数
     public float game; // game次数
     public boolean married;
     public String update_time; // 更新时间

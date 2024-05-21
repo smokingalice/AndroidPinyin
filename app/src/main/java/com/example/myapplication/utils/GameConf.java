@@ -57,16 +57,7 @@ public class GameConf {
      */
     private Context context;
 
-    /**
-     * 提供一个参数构造器
-     *
-     * @param xSize       Piece[][]数组第一维长度
-     * @param ySize       Piece[][]数组第二维长度
-     * @param beginImageX Board中第一张图片出现的x座标
-     * @param beginImageY Board中第一张图片出现的y座标
-     * @param gameTime    设置每局的时间, 单位是豪秒
-     * @param context     应用上下文
-     */
+
     public GameConf(int xSize, int ySize, int beginImageX, int beginImageY,
                     long gameTime, Context context) {
         this.xSize = xSize;
@@ -77,44 +68,30 @@ public class GameConf {
         this.context = context;
     }
 
-    /**
-     * @return 游戏的总时间
-     */
     public long getGameTime() {
         return gameTime;
     }
 
-    /**
-     * @return Piece[][]数组第一维的长度
-     */
+
     public int getXSize() {
         return xSize;
     }
 
-    /**
-     * @return Piece[][]数组第二维的长度
-     */
+
     public int getYSize() {
         return ySize;
     }
 
-    /**
-     * @return Board中第一张图片出现的x座标
-     */
     public int getBeginImageX() {
         return beginImageX;
     }
 
-    /**
-     * @return Board中第一张图片出现的y座标
-     */
+
     public int getBeginImageY() {
         return beginImageY;
     }
 
-    /**
-     * @return 应用上下文
-     */
+
     public Context getContext() {
         return context;
     }

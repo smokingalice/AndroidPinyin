@@ -5,16 +5,8 @@ import com.example.myapplication.view.Piece;
 
 
 public interface GameService {
-    /**
-     * 控制游戏开始的方法
-     */
-    void start(int n);
 
-    /**
-     * 定义一个接口方法, 用于返回一个二维数组
-     *
-     * @return 存放方块对象的二维数组
-     */
+    void start(int n);
     Piece[][] getPieces();
 
     /**

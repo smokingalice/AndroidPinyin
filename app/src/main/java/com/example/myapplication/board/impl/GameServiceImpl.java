@@ -117,13 +117,6 @@ public class GameServiceImpl implements GameService {
         return this.pieces[indexX][indexY];
     }
 
-    /**
-     * 工具方法：计算相对于Piece[][]数组的第一维 或第二维的索引值
-     *
-     * @param relative 座标
-     * @param size     每张图片边的长或者宽
-     * @return
-     */
     private int getIndex(int relative, int size) {
         // 表示座标relative不在该数组中，数组下标从0开始
         int index = -1;

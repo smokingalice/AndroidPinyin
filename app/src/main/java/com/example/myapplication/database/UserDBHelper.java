@@ -75,7 +75,6 @@ public class UserDBHelper extends SQLiteOpenHelper {
                 + "name VARCHAR NOT NULL," + "age INTEGER NOT NULL,"
                 + "study INTEGER NOT NULL," + "game FLOAT NOT NULL,"
                 + "married INTEGER NOT NULL," + "update_time VARCHAR NOT NULL"
-                //演示数据库升级时要先把下面这行注释
                 + ",phone VARCHAR" + ",password VARCHAR" + ",remnber VARCHAR" + ",remnber2 VARCHAR"
                 + ");";
         Log.d(TAG, "create_sql:" + create_sql);

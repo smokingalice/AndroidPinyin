@@ -71,10 +71,10 @@ public class SQLiteWriteActivity extends AppCompatActivity implements View.OnCli
                 ToastUtil.show(this, "请先填写年龄");
                 return;
             } else if (TextUtils.isEmpty(phone)) {
-                ToastUtil.show(this, "请先填写身高");
+                ToastUtil.show(this, "请先填写手机号");
                 return;
             } else if (TextUtils.isEmpty(password)) {
-                ToastUtil.show(this, "请先填写体重");
+                ToastUtil.show(this, "请先填写密码");
                 return;
             }
             // 以下声明一个用户信息对象，并填写它的各字段值
