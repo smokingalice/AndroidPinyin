@@ -1,4 +1,4 @@
-![image](https://github.com/smokingalice/AndroidPinyin/assets/112455320/abb25664-6fe3-4c73-b7ad-ff37abac8ec0)# 软件说明书
+# 软件说明书
 # 第一章 引言
 ## 软件名称:南邮教你学拼音
 版本号: 2.0.0
